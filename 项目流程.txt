@@ -1,0 +1,20 @@
+1.建表：
+  ccmit_user(uid,uname,upwd,email,phone)                      用户表
+  ccmit_programa(pid,title,img,abstract,url)                 栏目表
+  ccmit_content(cid,title,img,abstract,content,url,programa)  内容表
+  ccmit_discuss(did,title,content)		              评论表
+
+2.模块
+  用户模块
+  内容模块
+  评论模块
+ 
+3.创建目录
+  1.创建项目文件
+  2.创建模块
+  3.创建主程序(创建服务器)
+  4.创建mysql连接池
+
+4.创建数据库
+
+
