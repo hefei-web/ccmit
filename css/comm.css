@@ -1,0 +1,58 @@
+/* css重置 */
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font: 14px "simhei", Arial, Helvetica, sans-serif;
+    color: #666;
+}
+
+a,
+a:hover {
+    text-decoration: none;
+    color: #666;
+    cursor: pointer;
+}
+a:hover{
+    color: #000;
+}
+
+ul {
+    list-style: none;
+}
+
+img{
+    cursor: pointer;
+}
+
+p{
+    line-height: 1.4;
+}
+
+
+
+/* 引入底部样式 */
+
+@media screen and (min-width:992px){
+    footer iframe{
+        height: 830px;
+    }
+}
+@media screen and (max-width:991px) and (min-width:768px){
+    footer iframe{
+        height:1030px;
+    }
+}
+@media screen and (max-width:767px) and (min-width:590px){
+    footer iframe{
+        height:1510px;
+    }
+}
+@media screen and (max-width:591px){
+    footer iframe{
+        height: 1750px;
+    }
+}
+
