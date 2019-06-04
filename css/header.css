@@ -5,10 +5,13 @@ header{
     left:0;
     right: 0;
 }
-@media screen and (min-width:992px){
+
+@media screen and (min-width:1200px){
     header .container-fluid{
-        margin:0 auto;
-        width: 90%;
+        max-width: 990px;
+    }
+    span.i small{
+        font-size: 1rem;
     }
 }
 
@@ -23,9 +26,10 @@ header{
     background: #69c;
 }
 
-.navbar li.active a,.navbar li a:hover{
+.navbar li.active>a,.navbar li>a:hover{
     color: #fff !important;
 }
+
 ul.dropdown-menu.show{
     font-size: 0.75rem;
     min-width: 7rem;

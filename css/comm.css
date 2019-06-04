@@ -5,7 +5,7 @@
 }
 
 body {
-    font: 14px "simhei", Arial, Helvetica, sans-serif;
+    font: 14px "微软雅黑", "Hiragino Sans GB", "Microsoft YaHei", tahoma, arial, simsun, "";
     color: #666;
 }
 
@@ -30,8 +30,6 @@ img{
 p{
     line-height: 1.4;
 }
-
-
 
 /* 引入底部样式 */
 
