@@ -1,0 +1,87 @@
+/* 通用底部样式 */
+.footer{
+    background: #f2f2f2;
+    width: 100%;
+}
+.footer ul{
+    height: 165px;
+}
+.footer ul li{
+    height:25px;
+    line-height: 25px;
+    overflow: hidden;
+}
+.footer ul li:first-child{
+    margin: 1rem 0;
+}
+
+.footer ul li a:hover{
+    color:#69c;
+    text-decoration: underline;
+}
+.more,.more:hover{
+    margin:0;
+    color:#69c;
+}
+
+#footer{
+    background: #182029;
+    color:#919399;
+    font-size: 80%;
+}
+
+#footer ul li{
+    margin:1rem 0;
+}
+#footer ul li input#uname{
+    background:#fff url(../img/input-bg.png) no-repeat right 0;
+}
+#footer ul li input#uphone{
+    background:#fff url(../img/input-bg.png) no-repeat right -40px;
+}
+#footer ul li .btn{
+    background: #69c;
+    color:#fff;
+}
+
+#footer .view{
+    font-size: 1rem;
+    width: 100%;
+    text-align: center;
+    display: inline-block;
+    margin: 1rem 0 0 0;
+    padding: 10px 40px;
+    color: #fff;
+    background: #69c;
+    border-radius: 2px;
+}
+
+
+#footer ul.add{
+    background: url(../img/address-bg.png) no-repeat left center;
+}
+#footer ul.add li{
+    text-indent: 2.5rem;
+}
+#footer .sign p{
+    font-size: .75rem;
+}
+#footer .sign p a{
+    color:#919399;
+}
+
+#footer .sign p:first-child{
+    border-top:1px solid #ddd;
+    padding-top: 1.5rem;
+}
+#footer .sign p:nth-child(2) img{
+    margin-right: 0.5rem;
+}
+#footer a:hover,#footer p a:hover,#footer+div a:hover{
+    color: #fff;
+
+}
+#footer+div{
+   background: #0f141a;
+   padding: 1.5rem 0;
+}

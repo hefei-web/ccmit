@@ -1,0 +1,80 @@
+/* 头部导航 */
+header{
+    position: relative;
+    top:0;
+    left:0;
+    right: 0;
+}
+
+@media screen and (min-width:1200px){
+    header .container-fluid{
+        max-width: 990px;
+    }
+    span.i small{
+        font-size: 1rem;
+    }
+}
+
+
+.navbar span.i{
+    font-size: 14px;
+    font-style: italic;
+    font-family: 微软雅黑;
+    color:#999;
+}
+.navbar li.active,.navbar li:hover{
+    background: #69c;
+}
+
+.navbar li.active>a,.navbar li>a:hover{
+    color: #fff !important;
+}
+
+ul.dropdown-menu.show{
+    font-size: 0.75rem;
+    min-width: 7rem;
+    margin-top:0;
+    background: #69c;
+    padding:0;
+    border: none;
+    border-radius: 0 0 5px 5px;
+}
+ul.dropdown-menu li{
+    color:#fff !important;
+}
+ul.dropdown-menu li:hover,ul.dropdown-menu li.active{
+    background: #428bca;
+}
+
+@media screen and (min-width:992px){
+    .navbar #content li.nav-item{
+        padding:1rem 0;
+    }
+    .navbar #content li.active small,
+    .navbar #content li:hover small{
+        display: block !important;
+        border-top:1px dotted #fff;
+        padding:5px;
+        margin-top:5px;
+    }
+}
+@media screen and (max-width:767px){
+    .navbar #content{
+        margin-top:1rem;
+        padding-top: 1rem;
+        border-top:1px solid #ddd;
+    }
+    .navbar #content li a{
+        padding-left: 1rem;
+    }
+    ul.dropdown-menu.show{
+        background: #fff;
+        border-radius: 0;
+    }
+    ul.dropdown-menu li a{
+        color:#777 !important;
+    }
+    ul.dropdown-menu li:hover{
+        background: #52F208;
+    }
+}

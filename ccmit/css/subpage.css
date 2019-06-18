@@ -1,0 +1,127 @@
+/* 关于我们 */
+.banner, .bg_gary{
+    background: #f7f7f7;
+    border-bottom:1px solid #ededed;
+}
+.banner img{
+    min-height:100px; 
+}
+.banner ul.breadcrumb{
+    background: none;
+}
+.banner .breadcrumb-item + .breadcrumb-item::before{
+    content: ">"
+}
+.banner .breadcrumb-item a{
+    color:#69c;
+}
+.banner .view{
+    display: inline-block;
+    background: #69c;
+    border:1px solid #69c;
+    width:100%;
+    text-align: center;
+    color:#fff;
+    padding: 1.2rem 0;
+    transition: .5s;
+}
+.banner .view:hover{
+    background: #0A69C8;
+}
+.banner ul.dropdown-menu li a{
+    color:#fff;
+    font-size: .85rem;
+}
+p.about{
+    text-indent: 2rem;
+}
+/* 文化理念 */
+.our p{
+    line-height: 2.5;
+}
+.our a{
+    color:#69c;
+}
+.our:hover{
+    background: #69c;
+}
+.our:hover a{
+    text-decoration: underline;
+}
+.our:hover a,.our:hover,.our:hover p.text-dark{
+    color:#fff !important;
+}
+@media screen and (max-width:768px){
+    .border-right{
+        border-right: none !important;
+        border-bottom:1px solid #dee2e6 !important;
+    }
+}
+/* 加入我们 */
+.card .card-header p a{
+    color:#69c;
+}
+.search{
+    border-radius: 0;
+    border-right: 0;
+    }
+
+/* 文章列表 */
+.list .card,.list .card-header,.list .card-body,.list .card-footer{
+    border:none;
+    background: none;   
+}
+.list .card-footer{
+    border-bottom: 1px solid #ededed;
+    padding-bottom: 2rem;
+}
+.list .card-footer span{
+    display: inline-block;
+    margin-right: 1rem;
+    text-indent: 2rem;
+}
+.list .card-footer span:nth-child(1){
+    background: url(../img/ny-news-bg.png) no-repeat left center;
+    background-position: 0 -20px;
+}
+.list .card-footer span:nth-child(2){
+    background: url(../img/ny-news-bg.png) no-repeat left center;
+    background-position: 0 -44px;
+}
+.list img{
+    max-height:170px;
+}
+article p{
+    text-indent: 2rem;
+    line-height: 2.5;
+}
+article p a.view{
+    text-indent: 0;
+    display: inline-block;
+    text-align: center;
+    background: #69c;
+    color:#fff;
+    padding:0.3rem 1.5rem;
+    margin:0 1rem;
+}
+
+.recommend h6{
+    color:#000;
+    font-weight: bold;
+}
+.recommend h6 span{
+    display: inline-block;
+    color:#999;
+    font-size: 0.85rem;
+    margin-left:1rem;
+    font-weight: 500;
+}
+.recommend ul li{
+    margin:0.75rem 0;
+}
+.recommend ul li a{
+    color:#69c;
+}
+.recommend ul li small{
+    float: right;
+}

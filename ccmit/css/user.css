@@ -1,0 +1,126 @@
+.user {
+    background: url(../img/bg.png) no-repeat;
+    background-size: cover;
+    width: 100%;
+    height: 560px;
+    position: relative;
+}
+
+.user .reg,
+.user .login {
+    color: #fff;
+    position: absolute;
+    top: 10%;
+    right: 10%;
+    background: rgba(0, 0, 0, 0.2);
+    border-radius: 5px;
+    padding: 2rem 1.5rem;
+}
+.user .login{
+    top: 20%;
+    right: 20%;
+}
+.user .login input[type="checkbox"] {
+    position: relative;
+    top: 2px;
+}
+
+.user .reg p.left {
+    font-size: 0.85rem;
+    line-height: 1;
+    text-align: right;
+    width: 20%;
+    margin-right: 1rem;
+    letter-spacing: 0.1rem;
+}
+
+.user .reg a,
+.user .login a {
+    color: #fff;
+}
+
+.user .view {
+    color: #fff;
+    display: block;
+    text-align: center;
+    width: 100%;
+    padding: .75rem 0;
+    border-radius: 5px;
+    background: linear-gradient(to bottom, #27b0f6 0%, #0aa1ed 100%);
+}
+
+.user span.show_msg {
+    display: block;
+    color: #fff;
+    font-size: 12px;
+    line-height: 1.5;
+    padding: 5px 5px;
+    border-radius: 2px;
+    height: 100%;
+}
+.user .login span.show_msg{
+    margin-left: 1rem;
+}
+.user span.show_msg.warn {
+    background: #999;
+}
+
+.user span.show_msg.err {
+    background: #d00;
+}
+
+.user span.show_msg.suc {
+    background: #0d0;
+}
+
+
+
+@media screen and (max-width:992px) {
+    .user .reg {
+        position: static;
+        margin: 3rem 0;
+    }
+}
+
+@media screen and (max-width:577px) {
+
+    .user .reg,
+    .user .login {
+        position: static;
+        margin: 3rem 0;
+    }
+
+    .user .login {
+        margin: 6rem 0 0 0;
+    }
+
+    .user .reg p.left,
+    .user .reg {
+        font-size: .75rem;
+    }
+
+    .user .reg .col-xs-4 {
+        max-width: 33.333333%;
+        flex: 0 0 25%;
+    }
+
+    .user .reg .col-xs-5 {
+        max-width: 50%;
+    }
+
+    .user .reg .col-xs-8 {
+        max-width: 66.666667%;
+    }
+
+    .user .reg .d-xs-block {
+        display: none;
+        margin-left: 30% !important;
+    }
+
+    .user span.show_msg {
+        margin: 0 auto 10px auto;
+    }
+    .user{
+        height: 700px;
+    }
+}
