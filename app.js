@@ -11,6 +11,7 @@ var server = express();
 server.listen(8080);
 //托管静态资源
 server.use(express.static('public'));
+server.use(express.static('ccmit'));
 //使用body-parser中间件将post请求格式化为对象
 server.use(bodyParser.urlencoded({
     extended: false
