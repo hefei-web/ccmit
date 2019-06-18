@@ -6,22 +6,23 @@ const pool = require('../pool.js');
 var router = express.Router();
 //添加路由
 //用户注册
+router.post("/reg_name", function (req, res) {
+    var $uname = req.body.uname;
+    pool.query("SELECT * FROM ccmit_user WHERE uname=?", [$uname], function (err, result) {
+        if (err) throw err;
+        if (result.length > 0) {
+            res.send('0')
+        } else {
+            res.send('1')
+        }
+    })
+})
+
 router.post('/reg', function (req, res) {
     var obj = req.body;
-    var n = 400;
-    for (var key in obj) {
-        n++;
-        if (!obj[key]) {
-            res.send({ code: n, msg: key + ' ' + 'required' })
-            return;
-        }
-    }
-    console.log(obj)
     pool.query("INSERT INTO ccmit_user SET ?", [obj], function (err, result) {
-        if (err) { throw err };
-        if (result.affectedRows > 0) {
-            res.send({ code: 200, msg: '注册成功' })
-        }
+        if (err) throw err;
+        res.send(result);
     })
 })
 
@@ -39,9 +40,9 @@ router.post('/login', function (req, res) {
     pool.query("SELECT *FROM ccmit_user WHERE uname=? AND upwd=? ", [obj.uname, obj.upwd], function (err, result) {
         if (err) { throw err }
         if (result.length > 0) {
-            res.send({ code: 200, msg: '登录成功' })
+            res.send("200")
         } else {
-            res.send({ code: 301, msg: '登录失败' })
+            res.send("400")
         }
     })
 })
